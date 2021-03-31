@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct InstagramSiftUITutorialApp: App {
+struct InstagramCopy: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
