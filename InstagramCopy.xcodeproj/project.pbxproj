@@ -24,6 +24,7 @@
 		845CCC0B2614AD52007C4A94 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CCC0A2614AD52007C4A94 /* UserCell.swift */; };
 		845CCC0E2614AD65007C4A94 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CCC0D2614AD65007C4A94 /* UserListView.swift */; };
 		845CCC132614B74C007C4A94 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CCC122614B74C007C4A94 /* Extensions.swift */; };
+		8497771B261601AE00D0FDFE /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497771A261601AE00D0FDFE /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		845CCC0A2614AD52007C4A94 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		845CCC0D2614AD65007C4A94 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		845CCC122614B74C007C4A94 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8497771A261601AE00D0FDFE /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				8445141426146C3F009C99EB /* NotificationsView.swift */,
+				8497771A261601AE00D0FDFE /* NotificationCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				8445140626146B30009C99EB /* FeedView.swift in Sources */,
 				844513F2261467A0009C99EB /* ContentView.swift in Sources */,
 				844513DB261464ED009C99EB /* InstagramCopy.swift in Sources */,
+				8497771B261601AE00D0FDFE /* NotificationCell.swift in Sources */,
 				8445140F26146BFF009C99EB /* ProfileView.swift in Sources */,
 				8445141226146C21009C99EB /* CommentsView.swift in Sources */,
 				845CCC132614B74C007C4A94 /* Extensions.swift in Sources */,
