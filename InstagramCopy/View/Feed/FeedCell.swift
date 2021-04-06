@@ -62,7 +62,7 @@ struct FeedCell: View {
                 })
             }
             .padding(.leading, 4)
-            .foregroundColor(.red)
+            .foregroundColor(.primary)
             
             // Captions
             Text("33 likes")
@@ -83,6 +83,7 @@ struct FeedCell: View {
                 .padding(.leading, 8)
             
         }
+//        .padding(.horizontal)
     }
 }
 

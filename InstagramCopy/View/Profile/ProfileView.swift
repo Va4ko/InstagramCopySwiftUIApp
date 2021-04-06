@@ -9,12 +9,23 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text("Profile")
+        ScrollView {
+            VStack(spacing: 15 ) {
+                
+                ProfileHeaderView()
+                
+                PostGridView()
+                
+            }.padding(.top)
+            
+        }
+        
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            .previewDevice("iPhone 12")
     }
 }

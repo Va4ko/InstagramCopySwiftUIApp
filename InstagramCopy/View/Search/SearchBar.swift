@@ -38,11 +38,11 @@ struct SearchBar: View {
                     UIApplication.shared.endEditing()
                 }, label: {
                     Text("Cancel")
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                 })
                 .padding(.trailing, 8)
                 .transition(.move(edge: .trailing))
-                .animation(.default)
+                .animation(.easeOut)
             }
         }
     }

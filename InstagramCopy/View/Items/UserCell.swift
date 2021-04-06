@@ -21,9 +21,11 @@ struct UserCell: View {
             VStack(alignment: .leading) {
                 Text("Ronaldo")
                     .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(.primary)
                 
                 Text("Soccer player")
                     .font(.system(size: 14))
+                    .foregroundColor(.primary)
             }
             Spacer()
         }
