@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>712599036416-aua6tnfu4lmg3smqrbq8fp61j5lmgbh2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.712599036416-aua6tnfu4lmg3smqrbq8fp61j5lmgbh2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAD5j9rGPTflDda3iFEdLIM4aNEJNtiv9k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>712599036416</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Vachko.InstagramCopy</string>
+	<key>PROJECT_ID</key>
+	<string>instagram-copy-cc872</string>
+	<key>STORAGE_BUCKET</key>
+	<string>instagram-copy-cc872.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:712599036416:ios:2f8c869ff3050a324daee5</string>
+</dict>
+</plist>

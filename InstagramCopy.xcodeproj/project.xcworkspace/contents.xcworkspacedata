@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Volumes/SSD_2/SwiftUI_Course/InstagramSiftUITutorial/InstagramCopy.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
