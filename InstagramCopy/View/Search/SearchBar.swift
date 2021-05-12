@@ -42,14 +42,14 @@ struct SearchBar: View {
                 })
                 .padding(.trailing, 8)
                 .transition(.move(edge: .trailing))
-                .animation(.easeOut)
+                .animation(.easeIn)
             }
         }
     }
 }
 
-struct SearchBar_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchBar(text: .constant("Search..."), isEditing: .constant(true))
-    }
-}
+//struct SearchBar_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchBar(text: .constant("Search..."), isEditing: .constant(true))
+//    }
+//}

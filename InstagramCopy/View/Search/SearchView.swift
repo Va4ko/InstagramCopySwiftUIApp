@@ -15,23 +15,27 @@ struct SearchView: View {
     @ObservedObject var viewModel = SearchViewModel()
     
     var body: some View {
-        ScrollView {
+        VStack {
             SearchBar(text: $searchText, isEditing: $inSearchMode)
                 .padding()
             
-            ZStack {
-                if inSearchMode {
-                    UserListView(viewModel: viewModel, searchText: $searchText)
-                } else {
-                    PostGridView()
+            Spacer()
+            
+            ScrollView {
+                ZStack {
+                    if inSearchMode {
+                        UserListView(viewModel: viewModel, searchText: $searchText)
+                    } else {
+                        PostGridView(config: .explore)
+                    }
                 }
             }
         }
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
-}
+//struct SearchView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchView()
+//    }
+//}
