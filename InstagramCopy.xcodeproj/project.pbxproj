@@ -41,6 +41,9 @@
 		846557152629925C00C0B4A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 846557142629925C00C0B4A6 /* FirebaseFirestore */; };
 		846557172629925C00C0B4A6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 846557162629925C00C0B4A6 /* FirebaseStorage */; };
 		8465571A262995CD00C0B4A6 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84655719262995CD00C0B4A6 /* SearchViewModel.swift */; };
+		8468B244265667BE00E9B1C0 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468B243265667BE00E9B1C0 /* Notification.swift */; };
+		8468B24726566A3C00E9B1C0 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468B24626566A3C00E9B1C0 /* NotificationsViewModel.swift */; };
+		8468B24B26568B5500E9B1C0 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468B24A26568B5500E9B1C0 /* NotificationCellViewModel.swift */; };
 		8473DE7C2628500E002CFED8 /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473DE7B2628500E002CFED8 /* imageUploader.swift */; };
 		8473DE7F26288318002CFED8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473DE7E26288318002CFED8 /* Constants.swift */; };
 		848D8859261C4D5300422C7D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D8858261C4D5300422C7D /* ProfileHeaderView.swift */; };
@@ -93,6 +96,9 @@
 		845CCC122614B74C007C4A94 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8465570726298F6800C0B4A6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		84655719262995CD00C0B4A6 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		8468B243265667BE00E9B1C0 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		8468B24626566A3C00E9B1C0 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		8468B24A26568B5500E9B1C0 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 		8473DE7B2628500E002CFED8 /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
 		8473DE7E26288318002CFED8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		848D8858261C4D5300422C7D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 				8465570726298F6800C0B4A6 /* UserModel.swift */,
 				8491476C26398F0A00007093 /* Post.swift */,
 				8427716E264C2560007E53BF /* Comment.swift */,
+				8468B243265667BE00E9B1C0 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +340,8 @@
 		844513FE261468A4009C99EB /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				8468B24626566A3C00E9B1C0 /* NotificationsViewModel.swift */,
+				8468B24A26568B5500E9B1C0 /* NotificationCellViewModel.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -476,9 +485,12 @@
 				84E7E768261F32F100341923 /* CustomSecureField.swift in Sources */,
 				8427716F264C2560007E53BF /* Comment.swift in Sources */,
 				841BFEA6262F0A6E0029C150 /* UserService.swift in Sources */,
+				8468B244265667BE00E9B1C0 /* Notification.swift in Sources */,
 				845CCC052614A393007C4A94 /* SearchBar.swift in Sources */,
+				8468B24B26568B5500E9B1C0 /* NotificationCellViewModel.swift in Sources */,
 				84CACC46262706CE009EBC19 /* AuthViewModel.swift in Sources */,
 				8445141526146C3F009C99EB /* NotificationsView.swift in Sources */,
+				8468B24726566A3C00E9B1C0 /* NotificationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

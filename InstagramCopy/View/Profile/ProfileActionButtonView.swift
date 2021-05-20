@@ -37,10 +37,6 @@ struct ProfileActionButtonView: View {
                         .foregroundColor(isFollowed ? .primary : .white)
                         .background(isFollowed ? Color.clear : Color.blue)
                         .border(Color.gray, width: isFollowed ? 1 : 0)
-                    //                        .overlay(
-                    //                            RoundedRectangle(cornerRadius: 3)
-                    //                                .stroke(Color.gray, lineWidth: isFollowed ? 1 : 0)
-                    //                        )
                 })
                 .cornerRadius(3)
                 
