@@ -11,6 +11,7 @@ import Firebase
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: UserModel?
+    @Published var didSendRessetPasswordLink = false
     
     static let shared = AuthViewModel()
     
@@ -65,8 +66,14 @@ class AuthViewModel: ObservableObject {
         try? Auth.auth().signOut()
     }
     
-    func resetPaswword() {
-        
+    func resetPaswword(withEmail email: String) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                print("Failed to send link with error \(error.localizedDescription)")
+                return
+            }
+            self.didSendRessetPasswordLink = true
+        }
     }
     
     func fetchUser() {

@@ -32,8 +32,14 @@ struct NotificationCell: View {
                             .clipped()
                             .cornerRadius(19)
                         
-                        Text(viewModel.notification.username).font(.system(size: 14, weight: .semibold)).foregroundColor(.primary) +
-                            Text(viewModel.notification.type.notificationMessage).font(.system(size: 14))
+                        Text(viewModel.notification.username)
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundColor(.primary) +
+                            Text(viewModel.notification.type.notificationMessage)
+                            .font(.system(size: 14))
+                            .foregroundColor(.primary) +
+                            Text(" \(viewModel.timeStampString)")
+                            .font(.system(size: 12))
                             .foregroundColor(.primary)
                     })
             }

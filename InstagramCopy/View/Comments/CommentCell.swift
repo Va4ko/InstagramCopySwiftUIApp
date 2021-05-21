@@ -25,7 +25,7 @@ struct CommentCell: View {
             
             Spacer()
             
-            Text("2m")
+            Text(" \(comment.timeStampString ?? "")")
                 .font(.system(size: 12))
                 .foregroundColor(.gray)
         }.padding(.horizontal)

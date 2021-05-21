@@ -15,11 +15,24 @@ class FeedViewModel: ObservableObject {
     }
     
     func fetchPosts() {
-        COLLECTION_POSTS.getDocuments { snapshot, _ in
+        guard let user = AuthViewModel.shared.currentUser else { return }
+        guard let uid = user.id else { return }
+        
+        COLLECTION_POSTS.order(by: "timestamp", descending: true).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
-            
-            self.posts = documents.compactMap({ try? $0.data(as: Post.self)})
-            
+            let postsArray = documents.compactMap({ try? $0.data(as: Post.self)})
+            self.posts = postsArray.filter {$0.ownerUid != uid}
         }
     }
+    
+    
+    
+    //    func fetchPosts() {
+    //        COLLECTION_POSTS.order(by: "timestamp", descending: true).getDocuments { snapshot, _ in
+    //            guard let documents = snapshot?.documents else { return }
+    //
+    //            self.posts = documents.compactMap({ try? $0.data(as: Post.self)})
+    //
+    //        }
+    //    }
 }

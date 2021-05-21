@@ -48,7 +48,9 @@ class CommentViewModel: ObservableObject {
         
         query.addSnapshotListener { snapshot, _ in
             guard let addedDocs = snapshot?.documentChanges.filter({ $0.type == .added }) else { return }
-            self.comments.append(contentsOf: addedDocs.compactMap({ try? $0.document.data(as: Comment.self) }))
+            let commentsArray = addedDocs.compactMap({ try? $0.document.data(as: Comment.self) })
+            self .comments.append(contentsOf: commentsArray.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue() }))
+//            self.comments.append(contentsOf: addedDocs.compactMap({ try? $0.document.data(as: Comment.self) }))
             
 //            snapshot?.documentChanges.forEach({ change in
 //                if change.type == .added {

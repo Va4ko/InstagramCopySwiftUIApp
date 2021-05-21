@@ -37,6 +37,13 @@ struct FeedCell: View {
                                 Text(viewModel.post.ownerUsername)
                                     .font(.system(size: 14, weight: .semibold))
                                     .foregroundColor(.primary)
+                                
+                                Spacer()
+                                
+                                Text("...")
+                                    .font(.system(size: 16, weight: .semibold))
+                                    .foregroundColor(.primary)
+                                    .padding(.trailing, 8)
                             })
                     }
                 }
@@ -85,7 +92,7 @@ struct FeedCell: View {
                     })
                 }
                 .padding(.leading, 4)
-                //                .foregroundColor(.primary)
+                .foregroundColor(.primary)
                 
                 // Captions
                 Text(viewModel.likeString)
@@ -99,7 +106,7 @@ struct FeedCell: View {
                         .font(.system(size: 15))
                 }.padding(.horizontal, 8)
                 
-                Text("2d")
+                Text(viewModel.timeStampString)
                     .font(.system(size: 14))
                     .foregroundColor(.gray)
                     .padding(.top, 2)
